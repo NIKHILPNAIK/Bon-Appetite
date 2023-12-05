@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Filter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="filter-bar">
+    <label for="ingredient">Choose an ingredient:</label>
+    <select id="ingredient">
+      <option value="Chicken">Chicken</option>
+      <option value="onion">Onion</option>
+      <option value="Rice">Rice</option>
+      <option value="Tomato">Tomato</option>
+      <option value="Egg">Egg</option>
+      <option value="Milk">Milk</option>
+      <!-- Add more options as needed -->
+    </select>
+    <button onclick="getRecipes()">Get Recipes</button>
+  </div>
+  <header>
+    <a href="index.php" class="logo">Bon Appetite</a>
+    <ul class="navlist">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="signup.php">SignUp</a></li>
+
+    </ul>
+  </header>
+
+  <div class="container" id="recipes-container">
+    <div id="loading-indicator">Loading...</div>
+    <div id="nothing-filtered">Nothing Filtered</div>
+  </div>
+
+  <script src="assets/script1.js"></script>
+</body>
+</html>
